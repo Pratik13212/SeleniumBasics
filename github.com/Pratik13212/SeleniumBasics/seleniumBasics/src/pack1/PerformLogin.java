@@ -30,7 +30,19 @@ public class PerformLogin {
 		
 	   WebElement loginButton = driver.findElement(By.xpath("//input[@value='Login']"));
 	   
+	  
 	   loginButton.click();
+	   
+	   
+	   	Thread.sleep(3000);
+		driver.findElement(By.xpath("//span[text()='My Account']")).click();
+		
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("(//a[text()='Logout'])[1]")).click();
+		
+		
+		
+	   
 	   
 	   
 
